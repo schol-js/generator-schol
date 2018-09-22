@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Jamie Czerwinski",
+      "authorEmail": "jamie.czerwinski@telus.com",
+      "authorUrl": ""
+    }
+  }
+}
