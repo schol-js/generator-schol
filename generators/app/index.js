@@ -11,7 +11,11 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+    // Npm clobbers .gitignore files when publishing, so needs to be renamed
+    this.fs.copy(
+      this.templatePath('.gitignore.torename'),
+      this.destinationPath('.gitignore')
+    );
     // Extend or create package.json file in destination path
     this.fs.copyTpl(
       this.templatePath('package.json'),
