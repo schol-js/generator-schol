@@ -3,14 +3,11 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-schol:app', () => {
+describe('generator-schol', () => {
   beforeAll(() => {
-    return helpers
-      .run(path.join(__dirname, '../generators/app'))
-      .withPrompts({ someAnswer: true });
+    helpers.run(path.join(__dirname, '../generators/app'));
   });
-
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['package.json', '.gitignore']);
   });
 });

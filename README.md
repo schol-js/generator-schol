@@ -1,5 +1,8 @@
-# generator-schol [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+# generator-schol 
+
+## About
+
+This generator is designed to be used by the [schol CLI](https://github.com/schol-js/schol). As with all generators, it can also be used via `yo`.
 
 ## Installation
 
@@ -25,7 +28,7 @@ yo schol
 
 ## License
 
-MIT © [Jamie Czerwinski]()
+MIT © Jamie Czerwinski
 
 
 [npm-image]: https://badge.fury.io/js/generator-schol.svg
