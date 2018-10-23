@@ -8,9 +8,6 @@ module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
     this._template = opts.template || DEFAULT_TEMPLATE;
-    if (opts.path) {
-      this.destinationRoot(opts.path);
-    }
   }
 
   writing() {
